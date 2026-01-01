@@ -3,62 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Photographer - [Kurniawan Sumiarta]</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portofolio Kurniawan Sumiarta</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #222; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #333; padding: 10px; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; }
+        nav ul li { margin: 0 15px; position: relative; }
+        nav ul li a { color: white; text-decoration: none; padding: 10px; display: block; }
+        nav ul li:hover > ul { display: block; }
+        nav ul ul { display: none; position: absolute; top: 100%; left: 0; background-color: #444; min-width: 150px; }
+        nav ul ul li { margin: 0; }
+        nav ul ul li a { padding: 8px; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .section { margin-bottom: 40px; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .gallery img { width: 200px; height: 150px; object-fit: cover; border-radius: 5px; }
+        .booking { text-align: center; margin-top: 20px; }
+        .booking a { display: inline-block; margin: 10px; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .booking a:hover { background-color: #0056b3; }
+        footer { text-align: center; padding: 10px; background-color: #222; color: white; }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Portofolio Photographer</h1>
-            <h2>[Kurniawan Sumiarta]</h2>
-            <p>Spesialis Sport Photography. Jelajahi koleksi saya di bawah ini.</p>
-            <img src="images/logo.jpg" alt="Foto Profil" class="profile-img">
-        </div>
+        <h1>Portofolio Fotografer Olahraga</h1>
+        <p>Tangkap momen terbaik dalam dunia olahraga</p>
     </header>
     
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#indonesia-basket-league">Indonesia Basket League</a></li>
-                <li><a href="#indonesia-super-league">Indonesia Super League</a></li>
-                <li><a href="#ahf-cup-2022">AHF CUP 2022</a></li>
-                <li><a href="#aff-23-2025">AFF-23 2025</a></li>
-                <li><a href="#shopee-cup-2025">Shopee Cup 2025</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#sports">Olahraga</a>
+                <ul>
+                    <li><a href="#football">Sepak Bola</a></li>
+                    <li><a href="#futsal">Futsal</a></li>
+                    <li><a href="#basketball">Basket</a></li>
+                    <li><a href="#hockey">Hockey</a></li>
+                    <li><a href="#padel">Padel</a></li>
+                    <li><a href="#tennis">Tenis</a></li>
+                    <li><a href="#golf">Golf</a></li>
+                </ul>
+            </li>
+            <li><a href="#events">Foto Event</a></li>
+        </ul>
     </nav>
     
-    <main>
-        <section id="indonesia-basket-league" class="gallery-section">
-            <h3>Indonesia Basket League</h3>
-            <div class="gallery" data-folder="indonesia-basket-league"></div>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya adalah sport Photographer yang memiliki pengalam 6 tahun, dengan menangkap momen aksi, emosi, dan keindahan dalam berbagai cabang olahraga. Dengan pengalaman bertahun-tahun, saya siap membantu Anda mengabadikan event olahraga Anda.</p>
+            <p>Kontak: kurniawansumiarta9@gmail.com | Telepon: 081259552868</p>
         </section>
         
-        <section id="indonesia-super-league" class="gallery-section">
-            <h3>Indonesia Super League</h3>
-            <div class="gallery" data-folder="indonesia-super-league"></div>
+        <section id="sports" class="section">
+            <h2>Olahraga</h2>
+            <p>Pilih cabang olahraga untuk melihat portofolio foto saya:</p>
+            <div id="football" class="section">
+                <h3>Sepak Bola</h3>
+                <div class="gallery">
+                    <img src="https://via.placeholder.com/200x150?text=Foto+Sepak+Bola+1" alt="Sepak Bola 1">
+                    <img src="https://via.placeholder.com/200x150?text=Foto+Sepak+Bola+2" alt="Sepak Bola 2">
+                    <!-- Tambahkan foto asli Anda di sini -->
+                </div>
+            </div>
+            <div id="futsal" class="section" style="display:none;">
+                <h3>Futsal</h3>
+                <div class="gallery">
+                    <img src="https://via.placeholder.com/200x150?text=Foto+Futsal+1" alt="Futsal 1">
+                    <!-- Tambahkan foto asli -->
+                </div>
+            </div>
+            <!-- Ulangi untuk Basketball, Hockey, dll. Ganti display:none untuk menyembunyikan awalnya -->
+            <div id="basketball" class="section" style="display:none;">
+                <h3>Basket</h3>
+                <div class="gallery">
+                    <img src="https://via.placeholder.com/200x150?text=Foto+Basket+1" alt="Basket 1">
+                </div>
+            </div>
+            <!-- Lanjutkan untuk Hockey, Padel, Tenis, Golf dengan struktur serupa -->
         </section>
         
-        <section id="ahf-cup-2022" class="gallery-section">
-            <h3>AHF CUP 2022</h3>
-            <div class="gallery" data-folder="ahf-cup-2022"></div>
+        <section id="events" class="section">
+            <h2>Foto Event</h2>
+            <p>Segmentasi foto berdasarkan event. Tambahkan galeri di sini untuk setiap event yang Anda inginkan.</p>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/200x150?text=Event+1" alt="Event 1">
+                <img src="https://via.placeholder.com/200x150?text=Event+2" alt="Event 2">
+                <!-- Tambahkan foto event asli -->
+            </div>
         </section>
         
-        <section id="aff-23-2025" class="gallery-section">
-            <h3>AFF-23 2025</h3>
-            <div class="gallery" data-folder="aff-23-2025"></div>
-        </section>
-        
-        <section id="shopee-cup-2025" class="gallery-section">
-            <h3>Shopee Cup 2025</h3>
-            <div class="gallery" data-folder="shopee-cup-2025"></div>
-        </section>
-    </main>
+        <div class="booking">
+            <h2>Booking Fotografer</h2>
+            <a href="https://www.instagram.com/Kurniawansumiarta" target="_blank">Booking via Instagram</a>
+            <a href="https://wa.me/6281259552868?text=Halo,%20saya%20ingin%20booking%20fotografer%20olahraga" target="_blank">Booking via WhatsApp</a>
+        </div>
+    </div>
     
     <footer>
-        <p>&copy; 2023 [Kurniawan Sumiarta]. Semua hak cipta dilindungi.</p>
+        <p>&copy; 2026 Sport Photography. All rights reserved.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script>
+        // JavaScript sederhana untuk toggle sub-menu olahraga
+        const sportsSections = document.querySelectorAll('#sports .section');
+        sportsSections.forEach(section => section.style.display = 'none');
+        document.querySelector('#football').style.display = 'block'; // Default tampil Sepak Bola
+        
+        // Event listener untuk link sub-menu (opsional, jika ingin klik untuk toggle)
+        document.querySelectorAll('nav ul ul li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                sportsSections.forEach(section => section.style.display = 'none');
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
